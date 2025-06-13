@@ -53,7 +53,30 @@ Our data model has continued to get altered and tweaked alongside our code to po
 The core entities of our application are the Users, along with UserRoles, and Countries. The Users/UserRoles tables store information regarding the id, name, user archetype, email, and associated country. The Country table is a quite central node, linking all health metrics and additional country information in order to ensure everything is tied to the correct country. Further looking at the tables referencing the Country table, this is exclusively done using a country’s code; some tables you can see are the CountryArticles and CountryInformation tables, which house generated qualitative data, as well as six feature variables our app tracks over time (infant mortality, life expectancy, etc.), along with GHS index (country healthcare score). As you can see the six feature variables have the same format, storing country, year, and value so a future edit to simplify our data model could be to consolidate that into one feature table, with a FK id that indicates which feature variable it is. As you can see, the overall score differs from the feature variables as it aggregates six other factors like prevention, rapid response, etc. Moving back down, our last table is the Favorites table; which has a relationship with CountryArticles and Users. How the Favorites table works is when a user clicks to ‘favorite’ an article under a CountryProfile, this articleID is added to the table which can then be retrieved later on; further, an article can be ‘unfavorited’. 
 
 Along the side, you may see there are a few tables used for storing information regarding our ML models. So, for our regression model we store our hyperparameters per country and the training/testing datasets; and for the cosine similarity we store the weights of each health-related factor of the GHS Index.
+
+# Screenshots of Front-End
+Below are the country comparator components, including a table of the features and tracking the feature over time on a graph
+![image](country_comparator_table.png)
+![image](country_comparator_graph.png)
+
+Below are the images of our country profile page, including information about the country, as well as mock data powered articles  
+![image](profile_info.png)
+![image](profile_articles.png)
+
+Below are the screenshots of the features over time page, which display the graph based on the chosen button of the given features
+![image](feat_over_time_before.png)
+![image](feat_over_time_after.png)
+
+Below are the parts of our Customize Your Move page, where you can choose your country, make your rankings, tweak the ranking weights with sliders, view your rankings, and view your cosine similarity scores as a bar chart or a gradient map. 
+![image](custom_move_drag.png)
+![image](custom_move_sliders.png)
+![image](custom_move_rankings.png)
+![image](custome_move_bar.png)
+![image](custome_move_map.png)
+
  
 
 
-**Visit our github repository to view our project in its full depth:** 
+**Visit our github repository to view our project in its full depth:**
+[Github Repository for Project](https://arthur-t-huang.github.io/Care-Compass-Blog/team_posts/phase3post/#rest-api) 
+
