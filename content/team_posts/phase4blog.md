@@ -17,11 +17,11 @@ showAuthorsBadges: false
 
 After five weeks, we have put together our platform Care Compass. We have spent our time improving and implementing our machine learning models, as well as creating our tables and updating our API Layer so that the backend integrates seamlessly with the front end. Our platform provides users with future predictions of healthcare values, information about similar healthcare systems, and country information in our country profile. Our UI has been updated throughout this process, and is now user-friendly with streamlit resources such as buttons, drag-and-drop, and sliders. Below, we articulate a bit more in-depth about our work processes, and we include screenshots of some of the front end pages.
 
-# Rest API Matrix
-We cleaned up the backend by auditing and reorganizing our REST API routes to match the final structure of the application. We removed several unused country routes that were never called by the frontend, and deleted outdated comparison routes, since their functionality was now handled through our ML-based endpoints. We also moved the recommendation route from its own recommendations blueprint into the country blueprint to simplify the structure—there was no need for an entire folder just for one route. After making these changes, we updated the REST API matrix to reflect the current set of endpoints. Phase 3 Blog Post updated accordingly. 
+# REST API Matrix
+We cleaned up the backend by auditing and reorganizing our REST API routes to match the final structure of the application. We removed several unused country routes that were never called by the frontend, and deleted outdated comparison routes, since their functionality was now handled through our ML-based endpoints. We also moved the recommendation route from its own recommendations blueprint into the country blueprint to simplify the structure—there was no need for an entire folder just for one route. After making these changes, we updated the REST API matrix to reflect the current set of endpoints. [Phase 3 Blog Post](https://arthur-t-huang.github.io/Care-Compass-Blog/team_posts/phase3post/#rest-api) updated accordingly. 
 
 
-# ML MODELS: 
+# ML Models 
 
 ## Autoregressive Model: 
 
@@ -42,3 +42,18 @@ The autoregressive model was a new addition during this phase which was aimed at
 ## Cosine Similarity Model:
 
 The cosine similarity model that we worked on during phase 3 is now fully implemented. The user is now able to rank their priority of the healthcare factors: Prevention, Risk Environment, Health Systems, International Norms Compliance, Rapid Response, and Detection & Reporting. The user can drag-and-drop to rank these factors, and then use sliders to fine tune their ranking weights. Each factor also has a little information tooltip, to explain what each factor really means (a bit of information on the subcategories in the ghs_index). A route is used to get the cosine similarity information after the calculations are put into a dataframe. The visualizations include a bar chart that has the top five countries and their similarity score, as well as a gradient map that is colored based on how similar the country’s healthcare system is to the given country. This model is also used in the Country Profile page, where the sidebar has the top five similar countries based on healthcare factors.  
+
+
+# Data Models
+
+Our data model has continued to get altered and tweaked alongside our code to power such an interactive platform that is Care Compass. We have created a relational database so as to present the ecosystem of our project, displaying how key components interrelate. Below you can see the relational database in question:
+
+![image](relationalDatabase.png)
+
+The core entities of our application are the Users, along with UserRoles, and Countries. The Users/UserRoles tables store information regarding the id, name, user archetype, email, and associated country. The Country table is a quite central node, linking all health metrics and additional country information in order to ensure everything is tied to the correct country. Further looking at the tables referencing the Country table, this is exclusively done using a country’s code; some tables you can see are the CountryArticles and CountryInformation tables, which house generated qualitative data, as well as six feature variables our app tracks over time (infant mortality, life expectancy, etc.), along with GHS index (country healthcare score). As you can see the six feature variables have the same format, storing country, year, and value so a future edit to simplify our data model could be to consolidate that into one feature table, with a FK id that indicates which feature variable it is. As you can see, the overall score differs from the feature variables as it aggregates six other factors like prevention, rapid response, etc. Moving back down, our last table is the Favorites table; which has a relationship with CountryArticles and Users. How the Favorites table works is when a user clicks to ‘favorite’ an article under a CountryProfile, this articleID is added to the table which can then be retrieved later on; further, an article can be ‘unfavorited’. 
+
+Along the side, you may see there are a few tables used for storing information regarding our ML models. So, for our regression model we store our hyperparameters per country and the training/testing datasets; and for the cosine similarity we store the weights of each health-related factor of the GHS Index.
+ 
+
+
+**Visit our github repository to view our project in its full depth:** 
