@@ -78,5 +78,5 @@ Below are the parts of our Customize Your Move page, where you can choose your c
 
 
 **Visit our github repository to view our project in its full depth:**
-[Github Repository for Project](https://arthur-t-huang.github.io/Care-Compass-Blog/team_posts/phase3post/#rest-api) 
+[Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
 
