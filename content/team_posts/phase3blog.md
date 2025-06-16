@@ -56,25 +56,21 @@ In the recommendations blueprint, we created the ```/recommendations/factors``` 
 Lastly, in the ml blueprint, we connected our backend to the regression and cosine similarity models by wiring up routes for predictive forecasting, model parameter storage, and similarity-based lookups, laying the foundation for data-driven insights throughout the app.
 
 Below is a matrix of our thus far created REST APIs
-| **Resource**                                     | **GET**                                                             | **POST**                                | **PUT** | **DELETE**                  |
-| ------------------------------------------------ | ------------------------------------------------------------------- | --------------------------------------- | ------- | --------------------------- |
-| `/countries`                                     | Retrieves all countries                                             | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/countries/<country_code>`                      | Retrieves metadata, info, and articles for a country                | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/countries/<country_code>/articles`             | Retrieves articles associated with a specific country               | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/features/<input>`                              | Retrieves latest values for 6 key indicators for a given country    | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/articles/favorite`                             | Gets all favorited articles for the current user                    | Adds an article to the user's favorites | *n/a*   | *n/a*                       |
-| `/articles/favorite/<articleID>`                 | *n/a*                                                               | *n/a*                                   | *n/a*   | Removes a favorited article |
-| `/factor_descriptions`                           | Returns descriptions of the 6 healthcare system factors             | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/predict/<expenditure>/<country>`            | Regression stats for a specific expenditure & country               | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/get_regression/<input>`                     | Regression coefficients and stats for a country-feature pair        | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/get_autoregressive/<country>/<code>/<year>` | Autoregressive forecast for a country-feature combo to target year  | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/get_autoregressive_all/<input>`             | Runs autoregression model on a full dataset                         | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/get_graph_data/<input>`                     | Raw data for plotting for a given feature                           | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/get_countries`                              | Gets distinct countries from live births dataset                    | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/ml/store-weights`                              | *n/a*                                                               | Stores regression model weights         | *n/a*   | *n/a*                       |
-| `/ml/cosine/<country>/<weights_dict>`            | Returns cosine similarity results for a country using weight vector | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/users`                                         | Retrieves all users, optionally filtered by roleID                  | *n/a*                                   | *n/a*   | *n/a*                       |
-| `/users/id/<input>`                              | Returns user ID based on email address                              | *n/a*                                   | *n/a*   | *n/a*                       |
+| **Resource**                                     | **GET**                                                             | **POST**                                | **PUT**                         | **DELETE**                  |
+| ------------------------------------------------ | ------------------------------------------------------------------- | --------------------------------------- | ------------------------------- | --------------------------- |
+| `/country/countries`                                     | Retrieves all countries                                             | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/country/<country_code>`                      | Retrieves metadata, info, and articles for a country                | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/country/<country_code>/articles`             | Retrieves articles associated with a specific country               | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/country/features/<input>`                              | Retrieves latest values for 6 key indicators for a given country    | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/country/factor_descriptions`                           | Returns descriptions of the 6 healthcare system factors             | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/country/articles/favorite`                             | Gets all favorited articles for the current user                    | Adds an article to the user's favorites | *n/a*                           | *n/a*                       |
+| `/country/articles/favorite/<articleID>?userID=...`      | *n/a*                                                               | *n/a*                                   | *n/a*                           | Removes a favorited article |
+| `/ml/get_regression/<input>`                     | Regression coefficients and stats for a country-feature pair        | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/ml/get_autoregressive/<country>/<code>/<year>` | Autoregressive forecast for a country-feature combo to target year  | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/ml/cosine/<country>/<weights_dict>`            | Returns cosine similarity results for a country using weight vector | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/users/users`                                         | Retrieves all users, optionally filtered by roleID                  | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/users/id/<input>`                              | Returns user ID based on email address                              | *n/a*                                   | *n/a*                           | *n/a*                       |
+| `/users/<user_id>/preferences`                   | Retrieves saved preferences (weights) for a user                    | *n/a*                                   | Updates or inserts user weights | *n/a*                       |
 
 
 
