@@ -13,7 +13,7 @@ authors:
 showAuthorsBadges: false
 ---
 # Project Updates
-We began this phase by revisiting and refining our user archetypes, making each persona more specific and realistic. We added names, contextual details, and motivations that better aligned with the updated features of our app. For example, our original traveler persona was reframed as Archibald Bridgemont, a parent relocating to Europe with his family. We expanded his feature set to include not only healthcare priority-based matching, but also an optional comparison to his current country's system—blending both familiarity and preference in the results. Similarly, Nancy the policymaker was rewritten to focus less on a single country and more on globally informed, evidence-based reform, reflecting our system’s international comparison and forecasting capabilities. Gale, the student, was also given more context and academic grounding, reinforcing his need for tools like time-series charts and visual comparisons.
+[Changed again in Phase 4] We began this phase by revisiting and refining our user archetypes, making each persona more specific and realistic. We added names, contextual details, and motivations that better aligned with the updated features of our app. For example, our original traveler persona was reframed as Archibald Bridgemont, a parent relocating to Europe with his family. We expanded his feature set to include not only healthcare priority-based matching, but also an optional comparison to his current country's system—blending both familiarity and preference in the results. Similarly, Nancy the policymaker was rewritten to focus less on a single country and more on globally informed, evidence-based reform, reflecting our system’s international comparison and forecasting capabilities. Gale, the student, was also given more context and academic grounding, reinforcing his need for tools like time-series charts and visual comparisons. 
 
 These refined personas helped us anchor our technical decisions to real, use-driven goals. Updates to the full set of personas can be viewed in our [Phase I blog post](https://arthur-t-huang.github.io/Care-Compass-Blog/team_posts/phase1post/)
 
@@ -237,13 +237,14 @@ This wireframe shows the homepage of CareCompass. It introduces the different us
 ![image](wfCountryComparator.jpg)
 The _Country Comparator_ page is utilized by the student archetype where they are given the opportunity to choose 2-3 countries to compare 6 features' scores against one another in an organized table. Further, the student may choose to track a specific feature over time, given by a dropdown menu and visualized in a line plot (with different countries in different colors).
 
-![image](wfSuggestedArticles.jpg)
-The _Suggested Articles_ page is used by the student to explore news and research about a selected country’s healthcare system. Articles are fetched based on the selected country, helping students supplement quantitative score data with real-world context, policies, and current events. Country selection can be done via a dropdown or interactive map.
 ![image](wfSliders.jpg)
 The _Sliders_ page illustrates a personalized and customizable aspect to our application, particularly geared toward a moving resident. There are 6 factors that may be considered and the sliders allow users to prioritize some over others. The result of using the sliders is a bar chart that visualizes countries' scores based on the weights provided by the user (sorted from highest score to lowest), as well as a gradient map of the scores. An additional feature of this page is for individuals to choose what country they are coming from, and whether or not they would like that country score to factor into their results.
 
 ![image](wfCountryProfile.jpg)
 The _Country Profile_ is a dashboard that can be reached on its own or through links on other pages. This page is currently housed for residents to learn more about countries of interest to them. Additionally, users may see on the right side bar provided links to country profiles of similar score to that of the country of interest (country of which profile currently on).
+
+![image](wfFavoritedArticles.jpg)
+The _Favorited Articles_ page lets students and relocating residents revisit saved healthcare news and research. Displayed in a grid with titles, sources, and countries, each article can be removed from the list. Articles are favorited from individual country profile pages and appear here automatically, helping users gather real-world context for research, comparison, and informed decision-making.
 
 ![image](wfRegression.jpg)
 The _Regression_ page may be utilized by the policymaker archetype as they consider how a given country's score may change over time depending on the region, certain factors, and time. 
