@@ -24,7 +24,7 @@ We are building an application that helps users explore and evaluate the healthc
 - Compliance with International Norms
 - Risk Environment
 
-We are utilizing the Global Health Security Index, which provides a standardized scoring system across six core healthcare factors to generate a composite assessment for each country. Rather than allowing users to customize weights directly, we leverage the index to implement a machine learning model using k-nearest neighbors (k-NN). This enables users to express their healthcare priorities through sliders, which are transformed into a preference vector and compared against normalized country data to identify the most similar healthcare systems. Additionally, users can optionally select a country of origin. When enabled, recommendations blend similarity to that country with the user’s stated preferences to deliver context-aware results.
+We are utilizing the Global Health Security Index, which provides a standardized scoring system across six core healthcare factors to generate a composite assessment for each country. Rather than allowing users to customize weights directly, we leverage this index to implement a cosine similarity–based recommendation system. Users express their healthcare priorities through interactive sliders, which are converted into a preference vector. This vector is compared against normalized country data to identify nations with the most similar healthcare profiles. Additionally, users can optionally select a country of origin. When enabled, recommendations blend similarity to that country with the user’s stated preferences to deliver context-aware results tailored to both familiarity and healthcare priorities.
 
 The resulting country matches are visualized through ranked comparisons, interactive heat maps, and a side-by-side comparison tool for exploring differences in key health indicators. In addition, users can track how selected indicators have changed over time and view predictive forecasts for future performance, offering a forward-looking perspective based on historical trends.
 
@@ -33,44 +33,45 @@ The application converts raw public healthcare data to insights to drive equitab
 
 # Personas/Archetypes: 
 ## 1. Student studying _Global Health_
-**Description:** Gale is a second year student at Northeastern University majoring global health. He is researching healthcare systems in various countries for his report for his Introduction to Global Health class. He wants to make comparisons between systems in order to properly report back to his class and inform them about the benefits and drawbacks of the healthcare systems between countries. Gale continues with the intention to come up with an ideal (or “the _best_”) healthcare system. 
+**Description:** Student researchers use Care Compass to support academic projects, comparative analyses, and class presentations focused on international health systems. These users are often studying public health, policy, or global affairs, and need access to clear, credible, and visually engaging data.
 
 
 **User Stories:**
-- As a student, I want to compare healthcare quality across multiple countries, so that I can identify which systems produce the best outcomes.
-- As a student, I want to access key health indicators like coverage and affordability in one place, so that I can easily cite and present data for class projects.
-- As a student, I want to generate graphs comparing countries' health system performance, so that I can visually support my claims in presentations.
-- As a student, I want to project changes in, specifically, a country's life expectancy over time, so I can monitor the longevity of the population and the overall health of the population.
-- As a student, I want to track changes in health system performance over time, so that I can assess the impact of past reforms or crises.
+- As a student, I want to compare healthcare quality and outcomes across multiple countries so I can identify and explain differences in system performance.
+- As a student, I want to access key health indicators—like general practitioners per capita, infant mortality rate, and life expectancy—in one place to support my research.
+- As a student, I want to generate visualizations and comparative charts so I can include them in reports or class presentations.
+- As a student, I want to project future trends in health outcomes using forecasting tools so I can analyze policy impact over time.
+- As a student, I want to explore detailed country profiles with curated articles and external resources for deeper understanding and citations.
 
 
 ## 2. Individual moving abroad
-**Description:** Archibald Bridgemont is planning a long-term move to Europe with his wife and their young daughter, but hasn't yet chosen which country. He’s looking for a place with a strong and trustworthy healthcare system, where health risks are well-managed, medical needs are reliably met, and public institutions are stable and responsive. Because he values safety, preparedness, and long-term access to care, Archibald wants to explore countries that align with his personal healthcare priorities, and optionally, ones that resemble the healthcare system he’s used to. This dual approach helps him find a country that balances both comfort and ideal care. This traveler may have a family, so they also just want to know the general coverage and accessibility that they would be able to receive. 
+**Description:** These users are planning to move abroad and are seeking countries with healthcare systems that align with their personal values and expectations. They may be individuals, couples, or families evaluating long-term living conditions and health infrastructure abroad.
 
 
 **User Stories:**
-- As a future resident, want to express my healthcare priorities so that I can receive a personalized list of countries whose healthcare systems best match our needs. 
-- As a future resident, I want to optionally include my current country in the matching process, so that recommendations reflect both my preferences and familiarity with my existing system.
-- As a future resident, I want to see a visual map showing how well different countries align with my selected health priorities, so I can easily compare options across the region. 
-- As a future resident, I want to explore detailed country profiles with key healthcare insights and contextual information, so I can better understand what living there might be like and make an informed decision.
-- As a future resident, I want to see which countries are most similar to a given one, so I can consider strong alternatives that align with my healthcare priorities.
+- As a relocating resident, I want to customize healthcare priorities (like prevention or emergency response) so I can get a list of countries that best fit my needs.
+- As a relocating resident, I want to include my current country in the matching process so I can see which systems are both familiar and aligned with my priorities.
+- As a relocating resident, I want to view maps and bar charts that visually show how countries match my preferences so I can compare options easily.
+- As a relocating resident, I want to review detailed dashboards with country overviews, healthcare context, and external references so I can make an informed decision.
+- As a relocating resident, I want to discover countries with similar healthcare systems so I can expand my options without sacrificing care quality.
 
 
 ## 3. Policymaker analyzing current healthcare institutions
-**Description:** Nancy is a public health policymaker focused on improving her country’s healthcare system through evidence-based reform. She often looks beyond her borders to understand how other countries perform across key areas like prevention, emergency response, and health infrastructure. She’s especially interested in identifying countries with similar healthcare profiles to explore successful strategies that might translate well locally. Nancy also wants to monitor key health indicators over time and forecast future trends, helping her evaluate the impact of past policies and anticipate where new efforts are most needed. For her, global comparison isn’t just a reference point — it’s a tool for real-world decision-making. 
+**Description:** Policy makers use Care Compass to monitor and compare healthcare systems internationally. They rely on data-driven insights to shape policy, evaluate system performance, and propose strategic reforms.
 
 
 **User Stories:**
-- As a policymaker, I want to select a country and view its performance across core healthcare factors, so I can assess its strengths and weaknesses in key areas like prevention and health infrastructure.
-- As a policymaker, I want to see which countries are most similar to the one I’m analyzing, so I can explore proven strategies from comparable systems.
-- As a policymaker, I want to view how a specific healthcare indicator has changed over time in a given country, so I can evaluate the impact of past policies or reforms.
-- As a policymaker, I want to forecast the future trajectory of a selected healthcare factor, so I can anticipate challenges and plan more effectively.
+- As a policymaker, I want to monitor historical trends in healthcare indicators (like expenditure or life expectancy) so I can evaluate past reform impacts.
+- As a policymaker, I want to forecast future values for selected indicators so I can anticipate system needs and guide policy planning.
+- As a policymaker, I want to input target scores for healthcare factors and see how long it might take to reach them so I can develop realistic improvement timelines.
+- As a policymaker, I want to identify indicators that are improving or stagnating so I can focus on evidence-based areas for intervention.
+
 
 # Models: 
 **1. Cosine Similarity: Personalized Country Matching**
-Used to match users with countries whose healthcare systems align most closely with their personal priorities. Users express their preferences across six key health system factors (e.g., prevention, response, infrastructure), and the system uses cosine similarity to calculate similarity between the user’s input and each country’s normalized profile. Users can also enable a mode that blends similarity to a selected origin country with their preferences. This allows for personalized recommendations that balance familiar healthcare systems with their desired system attributes.
+Used to match users with countries whose healthcare systems align most closely with their personal priorities. Users express their preferences across six key health system factors (e.g., prevention, response, infrastructure), and the system uses cosine similarity to calculate similarity between the user’s input and each country’s normalized profile. Also users can input their current country, which blends similarity to that country with their preferences. This allows for personalized recommendations that balance familiar healthcare systems with their desired system attributes.
 
-Used by: Future Resident, Policymaker
+Used by: Future Resident
 Feature link: Ranking and possible Slider-based input → ranked list of top-matching countries
 
 **2. Predictive Modeling: Indicator Forecasting**
