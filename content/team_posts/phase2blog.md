@@ -79,6 +79,10 @@ The relational diagram was further derived as:
 Based on our global data model, a first pass of our SQL DDL can be seen below.
 
 <pre> 
+DROP DATABASE IF EXISTS cc_database;
+CREATE DATABASE cc_database;
+USE cc_database;
+
 DROP TABLE IF EXISTS Countries;
 CREATE TABLE Countries
 (
@@ -120,7 +124,7 @@ CREATE TABLE CountryArticles(
     article_title  VARCHAR(255) NOT NULL,
     article_link   VARCHAR(1371) NOT NULL,
     source         VARCHAR(100) NOT NULL,
-
+    image_name    VARCHAR(26) NOT NULL,
     FOREIGN KEY (country_code) REFERENCES Countries(code)
 );
 
@@ -156,15 +160,50 @@ CREATE TABLE Favorites(
     FOREIGN KEY (userID) REFERENCES Users(id)
 );
 
-DROP TABLE IF EXISTS Factors;
-CREATE TABLE Factors
+DROP TABLE IF EXISTS RegressionFactors;
+CREATE TABLE RegressionFactors 
 (
-    factorID    INT PRIMARY KEY,
-    name        VARCHAR(50),
-    score       INT,
-    
-    FOREIGN KEY (score) REFERENCES OverallScore(scoreID)
+    factorID INT AUTO_INCREMENT PRIMARY KEY,
+    factor_code VARCHAR(50) UNIQUE NOT NULL,
+    factor_name VARCHAR(100),
+    who_code VARCHAR(50),  
+    table_name VARCHAR(50)
 );
+
+DROP TABLE IF EXISTS RegressionWeights;
+CREATE TABLE RegressionWeights
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    country VARCHAR(50),
+    slope FLOAT,
+    intercept FLOAT,
+    mse FLOAT,
+    r2 FLOAT,
+    factorID INT,
+    userID INT,
+
+    FOREIGN KEY (userID) REFERENCES Users(id),
+    FOREIGN KEY (country) REFERENCES Countries(code),
+    FOREIGN KEY (factorID) REFERENCES RegressionFactors(factorID)
+);
+
+DROP TABLE IF EXISTS AutoregWeights;
+CREATE TABLE AutoregWeights 
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    country VARCHAR(50),
+    factorID INT,
+    userID INT,
+    weight_vector JSON,
+    lag_years INT DEFAULT 10,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (country) REFERENCES Countries(code),
+    FOREIGN KEY (factorID) REFERENCES RegressionFactors(factorID),
+    FOREIGN KEY (userID) REFERENCES Users(id),
+    UNIQUE KEY unique_autoreg (country, factorID, userID)
+);
+
 
 DROP TABLE IF EXISTS LiveBirths;
 CREATE TABLE LiveBirths(
@@ -224,6 +263,19 @@ CREATE TABLE InfantMortality(
     VALUE   NUMERIC(5,2) NOT NULL,
 
     FOREIGN KEY (COUNTRY) REFERENCES Countries(code)
+);
+
+DROP TABLE IF EXISTS CosineWeights;
+CREATE TABLE CosineWeights(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userID INT,
+    preventionWeight FLOAT DEFAULT 0.0,
+    detectReportWeight FLOAT DEFAULT 0.0,
+    rapidRespWeight FLOAT DEFAULT 0.0,
+    healthSysWeight FLOAT DEFAULT 0.0,
+    intlNormsWeight FLOAT DEFAULT 0.0,
+    riskEnvWeight FLOAT DEFAULT 0.0,
+    FOREIGN KEY (userID) REFERENCES Users(id)
 );
  </pre>
 
