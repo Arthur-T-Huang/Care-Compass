@@ -219,7 +219,7 @@ View instant comparison table showing all 6 healthcare metrics across selected c
 Track your selected metric over time with historical data and projections through 2035, helping you understand healthcare system trajectories.
 
 
-<!-- ## Policymaker Home Page
+## Policymaker Home Page
 
 Drive evidence-based healthcare policy decisions with comprehensive analytics and tracking tools.
 
@@ -258,7 +258,7 @@ Visualize historical data and future projections for key healthcare indicators t
 ### View Analysis
 ![Trends Graph](features_over_time_graph.png)
 
-Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis. -->
+Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis.
 
 
 
