@@ -103,6 +103,30 @@ The personalized resident dashboard provides a centralized hub for all healthcar
 - Start with Customize Your Move for personalized recommendations
 - Compare countries side-by-side to find your perfect healthcare destination
 
+## Customize Your Move
+Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
+![Full Interface](custom_move_full.png)
+
+### Learn More
+![Learn Section](custom_move_learn.png)
+Understand the methodology behind the Global Health Security Index
+
+### How It Works
+![Selection Interface](custom_move_selection.png)
+**Step 1:** Select your current country  
+**Step 2:** Drag and rank 6 healthcare factors by importance (Prevention, Health System, Rapid Response, etc.)     
+**Step 3:** Fine-tune each factor with sliders (0-10 scale)    
+Click "Find My Matches" to see your personalized results!   
+
+### View Your Results
+**Bar Chart**
+![Bar Chart](custom_move_bar.png)
+See your top 5 matching countries with similarity scores
+
+**World Map**
+![World Map](custom_move_map.png)
+Visualize global matches with color-coded similarity scores
+
 ## Country Healthcare Profiles
 Explore comprehensive healthcare information and insights for countries worldwide.
 
@@ -144,29 +168,23 @@ Build a personalized library of healthcare insights from around the world.
 Start exploring country pages to curate your personalized healthcare knowledge base.
 
 
-## Customize Your Move
-Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
-![Full Interface](custom_move_full.png)
+## Student Home Page
 
-### Learn More
-![Learn Section](custom_move_learn.png)
-Understand the methodology behind the Global Health Security Index
+Your personalized dashboard for exploring global healthcare education opportunities and study destinations.
 
-### How It Works
-![Selection Interface](custom_move_selection.png)
-**Step 1:** Select your current country  
-**Step 2:** Drag and rank 6 healthcare factors by importance (Prevention, Health System, Rapid Response, etc.)     
-**Step 3:** Fine-tune each factor with sliders (0-10 scale)    
-Click "Find My Matches" to see your personalized results!   
+![Student Home](student_home_full.png)
 
-### View Your Results
-**Bar Chart**
-![Bar Chart](custom_move_bar.png)
-See your top 5 matching countries with similarity scores
+### Core Features
+- **Compare Countries**: Evaluate countries side-by-side for living conditions, education quality, and study opportunities
+- **Country Profiles**: Deep dive into healthcare systems, education requirements, and student life
+- **Saved Articles**: Access your personalized collection of study abroad guides and resources
 
-**World Map**
-![World Map](custom_move_map.png)
-Visualize global matches with color-coded similarity scores
+### Platform Stats
+195+ Countries Analyzed | 1000+ Health Metrics | 6 Core Health Factors | 24/7 Resource Access
+
+### Student Success Tips
+- Compare 3-4 countries to understand healthcare education differences
+- Save articles about programs and requirements to build your personal resource library
 
 **Visit our github repository to view our project in its full depth:**
 [Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
