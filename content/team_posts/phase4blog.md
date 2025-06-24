@@ -77,23 +77,21 @@ Below are the parts of our Customize Your Move page, where you can choose your c
 
 
 ## Healthcare System Customization Tool
-
 Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
-
 ![Full Interface](custom_move_full.png)
 
+### Learn More
+![Learn Section](custom_move_learn.png)
+Understand the methodology behind the Global Health Security Index
+
 ### How It Works
-
-**Step 1:** Select your current country  
-**Step 2:** Drag and rank 6 healthcare factors by importance (Prevention, Health System, Rapid Response, etc.)  
+![Selection Interface](custom_move_selection.png)
+**Step 1:** Select your current country
+**Step 2:** Drag and rank 6 healthcare factors by importance (Prevention, Health System, Rapid Response, etc.)
 **Step 3:** Fine-tune each factor with sliders (0-10 scale)
-
 Click "Find My Matches" to see your personalized results!
 
-![Selection Interface](custom_move_selection.png)
-
 ### View Your Results
-
 **Bar Chart**
 ![Bar Chart](custom_move_bar.png)
 See your top 5 matching countries with similarity scores
@@ -101,11 +99,6 @@ See your top 5 matching countries with similarity scores
 **World Map**
 ![World Map](custom_move_map.png)
 Visualize global matches with color-coded similarity scores
-
-
-**Learn More**
-![Learn Section](custom_move_learn.png)
-Understand the methodology behind the Global Health Security Index
 
 **Visit our github repository to view our project in its full depth:**
 [Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
