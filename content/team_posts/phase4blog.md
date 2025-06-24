@@ -117,7 +117,31 @@ Explore comprehensive healthcare information and insights for countries worldwid
 ### Latest Healthcare Articles
 Stay informed with curated articles specific to each country
 
+### Learn More
+![Learn Section](country_profile_learn.png)
+Understand the methodology behind the Global Health Security Index
+
 The page provides a complete healthcare profile with real-time articles and similarity comparisons, making it easy to understand any country's healthcare landscape at a glance.
+
+## Favorite Articles
+
+Build a personalized library of healthcare insights from around the world.
+
+![Healthcare Article Collection](favorite_articles_full.png)
+
+### Key Features
+- **Personal Library**: Save articles from different countries in one place
+- **Quick Start Guide**: Navigate → Browse → Save → Access your favorites
+- **Article Management**: View saved articles with source info and easy removal
+
+### Learn More
+![Learn Section](favorite_articles.learn.png)
+
+**How it works**: Navigate to country pages, click the star icon to save articles, and manage your collection with the remove button.
+
+**Why build a collection**: Track global healthcare trends, compare systems internationally, and quickly access relevant research for your work.
+
+Start exploring country pages to curate your personalized healthcare knowledge base.
 
 
 ## Customize Your Move
