@@ -219,7 +219,7 @@ View instant comparison table showing all 6 healthcare metrics across selected c
 Track your selected metric over time with historical data and projections through 2035, helping you understand healthcare system trajectories.
 
 
-<!-- ## Policymaker Home Page
+## Policymaker Home Page
 
 Drive evidence-based healthcare policy decisions with comprehensive analytics and tracking tools.
 
@@ -236,7 +236,7 @@ Drive evidence-based healthcare policy decisions with comprehensive analytics an
 - Review trends over 5 years to identify patterns and assess policy impact on healthcare outcomes
 - Set targets using both regional averages and top-performing countries for achievable yet ambitious goals
 
-## Healthcare Trends Over Time
+<!-- ## Healthcare Trends Over Time
 
 Visualize historical data and future projections for key healthcare indicators to inform policy decisions.
 
