@@ -74,6 +74,9 @@ Below are the parts of our Customize Your Move page, where you can choose your c
 ![image](custome_move_bar.png)
 ![image](custome_move_map.png)
 
+Home Page of our website
+![image](home_page.png)
+![image](home_page_sidebar.png)
  
 
 
