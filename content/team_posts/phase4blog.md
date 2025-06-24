@@ -103,6 +103,23 @@ The personalized resident dashboard provides a centralized hub for all healthcar
 - Start with Customize Your Move for personalized recommendations
 - Compare countries side-by-side to find your perfect healthcare destination
 
+## Country Healthcare Profiles
+Explore comprehensive healthcare information and insights for countries worldwide.
+
+![Country Profile](country_profile_full.png)
+
+### Key Features
+- **Country Selection**: Search or select from dropdown to explore any country's healthcare system
+- **General Information**: Overview of the country's geography, culture, and basic healthcare infrastructure
+- **Healthcare System Overview**: Detailed analysis of healthcare services, insurance systems, and regulatory oversight
+- **Similar Healthcare Systems**: Compare with countries that have comparable healthcare characteristics (shown with similarity scores)
+
+### Latest Healthcare Articles
+Stay informed with curated articles specific to each country
+
+The page provides a complete healthcare profile with real-time articles and similarity comparisons, making it easy to understand any country's healthcare landscape at a glance.
+
+
 ## Customize Your Move
 Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
 ![Full Interface](custom_move_full.png)
