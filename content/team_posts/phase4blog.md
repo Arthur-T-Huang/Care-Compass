@@ -219,7 +219,7 @@ View instant comparison table showing all 6 healthcare metrics across selected c
 Track your selected metric over time with historical data and projections through 2035, helping you understand healthcare system trajectories.
 
 
-## Policymaker Home Page
+<!-- ## Policymaker Home Page
 
 Drive evidence-based healthcare policy decisions with comprehensive analytics and tracking tools.
 
@@ -258,7 +258,7 @@ Visualize historical data and future projections for key healthcare indicators t
 ### View Analysis
 ![Trends Graph](features_over_time_graph.png)
 
-Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis.
+Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis. -->
 
 ## Healthcare Target Calculator
 
@@ -295,6 +295,34 @@ Summary table shows current values, targets, trends, and projected achievement d
 ![Detailed Analysis](target_scores_graph.png)
 
 Interactive graphs display trend projections with confidence scores, helping visualize the path to achieving healthcare targets.
+
+## Get to Know Care Compass
+
+Learn about our mission to simplify global healthcare data through machine learning and analytics.
+
+![About Page](about_full.png)
+
+### Overview
+- **Mission**: Help users compare global healthcare systems with data-driven insights
+- **Core Analysis**: Six healthcare factors including Prevention, Health System, and Risk Environment  
+- **Impact**: 195+ countries analyzed with 1000+ data points
+
+We convert complex healthcare data into actionable insights for individuals, students, and policymakers.
+
+
+## Meet Our Team
+
+Connect with the passionate minds behind Care Compass and explore our research insights.
+
+![Contact Info](contact_info_full.png)
+
+### Key Features
+- **Team Introduction**: Meet the four team members driving Care Compass forward
+- **Research & Insights**: Access data-driven research, methodology deep-dives, and policy trend analysis
+- **Direct Contact**: Email links for each team member to collaborate on healthcare research
+
+### Resources
+Visit the Care Compass Blog for country spotlights, methodology insights, and healthcare policy analysis to make complex health data accessible for everyone.
 
 **Visit our github repository to view our project in its full depth:**
 [Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
