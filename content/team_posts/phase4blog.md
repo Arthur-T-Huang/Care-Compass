@@ -67,13 +67,6 @@ Below are the screenshots of the features over time page, which display the grap
 ![image](feat_over_time_before.png)
 ![image](feat_over_time_after.png)
 
-Below are the parts of our Customize Your Move page, where you can choose your country, make your rankings, tweak the ranking weights with sliders, view your rankings, and view your cosine similarity scores as a bar chart or a gradient map. 
-![image](custom_move_drag.png)
-![image](custom_move_sliders.png)
-![image](custom_move_rankings.png)
-![image](custome_move_bar.png)
-![image](custome_move_map.png)
-
 ## Home Page
 The Care Compass home page welcomes users with a clean, intuitive interface designed to guide different user types to their personalized healthcare insights.
 
@@ -93,7 +86,24 @@ Three distinct pathways cater to different user needs:
 
 The streamlined login process allows users to quickly select their role and access the tools most relevant to their needs, making complex healthcare data accessible to everyone.
 
-## Healthcare System Customization Tool
+## Resident Home Page
+The personalized resident dashboard provides a centralized hub for all healthcare relocation tools and resources.
+
+![Resident Home](resident_home_full.png)
+
+### Core Features
+- **Customize Your Move**: Plan your healthcare relocation journey with personalized recommendations
+- **Explore Countries**: Discover detailed healthcare profiles and compare medical systems worldwide
+- **Saved Resources**: Access your collection of favorited healthcare articles and guides
+
+### Platform Stats
+195+ Countries | 1000+ Health Metrics | 24/7 Support | 98% User Satisfaction
+
+### Quick Tips
+- Start with Customize Your Move for personalized recommendations
+- Compare countries side-by-side to find your perfect healthcare destination
+
+## Customize Your Move
 Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
 ![Full Interface](custom_move_full.png)
 
