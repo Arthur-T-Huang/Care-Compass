@@ -74,7 +74,24 @@ Below are the parts of our Customize Your Move page, where you can choose your c
 ![image](custome_move_bar.png)
 ![image](custome_move_map.png)
 
+## Home Page
+The Care Compass home page welcomes users with a clean, intuitive interface designed to guide different user types to their personalized healthcare insights.
 
+![Home Page](home_full.png)
+
+### Choose Your Role
+Three distinct pathways cater to different user needs:
+- **Resident**: Access personalized healthcare recommendations and country comparisons
+- **Student**: Explore healthcare data and trends for research and learning
+- **Policymaker**: Analyze healthcare systems and access policy insights
+
+### Why Choose Care Compass?
+- **Real Data**: Access authentic healthcare data from trusted global sources
+- **ML Insights**: Powered by advanced machine learning algorithms
+- **Global Coverage**: Compare healthcare systems across many different countries
+- **Personalized**: Get recommendations based on your top priorities
+
+The streamlined login process allows users to quickly select their role and access the tools most relevant to their needs, making complex healthcare data accessible to everyone.
 
 ## Healthcare System Customization Tool
 Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
@@ -86,10 +103,10 @@ Understand the methodology behind the Global Health Security Index
 
 ### How It Works
 ![Selection Interface](custom_move_selection.png)
-**Step 1:** Select your current country
-**Step 2:** Drag and rank 6 healthcare factors by importance (Prevention, Health System, Rapid Response, etc.)
-**Step 3:** Fine-tune each factor with sliders (0-10 scale)
-Click "Find My Matches" to see your personalized results!
+**Step 1:** Select your current country  
+**Step 2:** Drag and rank 6 healthcare factors by importance (Prevention, Health System, Rapid Response, etc.)     
+**Step 3:** Fine-tune each factor with sliders (0-10 scale)    
+Click "Find My Matches" to see your personalized results!   
 
 ### View Your Results
 **Bar Chart**
