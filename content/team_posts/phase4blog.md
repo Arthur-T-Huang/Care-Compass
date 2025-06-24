@@ -259,7 +259,7 @@ Visualize historical data and future projections for key healthcare indicators t
 ![Trends Graph](features_over_time_graph.png)
 
 Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis. 
-<!-- 
+
 ## Healthcare Target Calculator
 
 Set ambitious healthcare goals and track when they'll be achieved based on current trends.
@@ -322,7 +322,7 @@ Connect with the passionate minds behind Care Compass and explore our research i
 - **Direct Contact**: Email links for each team member to collaborate on healthcare research
 
 ### Resources
-Visit the Care Compass Blog for country spotlights, methodology insights, and healthcare policy analysis to make complex health data accessible for everyone. -->
+Visit the Care Compass Blog for country spotlights, methodology insights, and healthcare policy analysis to make complex health data accessible for everyone.
 
 **Visit our github repository to view our project in its full depth:**
 [Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
