@@ -236,7 +236,7 @@ Drive evidence-based healthcare policy decisions with comprehensive analytics an
 - Review trends over 5 years to identify patterns and assess policy impact on healthcare outcomes
 - Set targets using both regional averages and top-performing countries for achievable yet ambitious goals
 
-<!-- ## Healthcare Trends Over Time
+## Healthcare Trends Over Time
 
 Visualize historical data and future projections for key healthcare indicators to inform policy decisions.
 
@@ -258,7 +258,7 @@ Visualize historical data and future projections for key healthcare indicators t
 ### View Analysis
 ![Trends Graph](features_over_time_graph.png)
 
-Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis. -->
+Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis. 
 <!-- 
 ## Healthcare Target Calculator
 
