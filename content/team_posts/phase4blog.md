@@ -260,7 +260,41 @@ Visualize historical data and future projections for key healthcare indicators t
 
 Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis.
 
+## Healthcare Target Calculator
 
+Set ambitious healthcare goals and track when they'll be achieved based on current trends.
+
+![Healthcare Target Calculator](target_scores_full.png)
+
+### Key Features
+- **Quick Start Guide**: 4-step process to analyze country data and set target values
+- **Current Status Review**: View 6 key healthcare metrics for your selected country
+- **Target Setting**: Adjust sliders to set ambitious yet achievable healthcare goals
+- **Projection Analysis**: Calculate when targets will be reached based on historical trends
+
+### Learn More
+![Learn Section](target_scores_learn.png)
+
+**Projection Technology**: Linear regression analysis of historical trends to estimate achievement timelines
+
+**Available Indicators**: Life expectancy, infant mortality, live births, general practitioners, health expenditure, and impoverished households
+
+### How It Works
+![Selection Interface](target_scores_selection.png)
+
+**Step 1:** Select a country to analyze  
+**Step 2:** Review current healthcare status across 6 key metrics  
+**Step 3:** Set target values using interactive sliders  
+Click "Calculate Projections" to see when goals will be achieved
+
+### View Results
+![Results Summary](target_scores_chart.png)
+
+Summary table shows current values, targets, trends, and projected achievement dates with status indicators.
+
+![Detailed Analysis](target_scores_graph.png)
+
+Interactive graphs display trend projections with confidence scores, helping visualize the path to achieving healthcare targets.
 
 **Visit our github repository to view our project in its full depth:**
 [Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
