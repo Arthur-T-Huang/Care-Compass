@@ -186,6 +186,44 @@ Your personalized dashboard for exploring global healthcare education opportunit
 - Compare 3-4 countries to understand healthcare education differences
 - Save articles about programs and requirements to build your personal resource library
 
+## Country Healthcare Comparator
+
+Compare healthcare systems across multiple countries with data-driven insights and trend analysis.
+
+![Country Comparator](country_comparator_full.png)
+
+### Key Features
+- **Quick Start Guide**: 4-step process to compare countries and explore projected trends
+- **Country Selection**: Compare up to 3 countries simultaneously 
+- **Healthcare Trends**: Track and forecast key metrics through 2035
+- **Visual Analytics**: Interactive charts showing historical and projected data
+
+### Learn More
+![Learn Section](country_comparator_learn.png)
+
+**Key Metrics**: Life expectancy, infant mortality, healthcare workforce, health expenditure, financial protection, and birth rate indicators
+
+**Forecasting Technology**: Autoregressive models analyze WHO data to project trends through 2035
+
+### How It Works
+![Selection Interface](country_comparator_selection.png)
+
+**Step 1:** Select 2-3 countries to compare  
+View instant comparison table showing all 6 healthcare metrics across selected countries
+
+**Step 2:** Choose one metric from the results table and click "Generate Chart" to visualize trends
+
+### View Trends
+![Trends Chart](country_articles_graph.png)
+
+Track your selected metric over time with historical data and projections through 2035, helping you understand healthcare system trajectories.
+
+
+
+
+
+
+
 **Visit our github repository to view our project in its full depth:**
 [Github Repository for Project](https://github.com/RemainingDelta/Care-Compass) 
 
