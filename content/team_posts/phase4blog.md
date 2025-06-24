@@ -159,7 +159,7 @@ Build a personalized library of healthcare insights from around the world.
 - **Article Management**: View saved articles with source info and easy removal
 
 ### Learn More
-![Learn Section](favorite_articles.learn.png)
+![Learn Section](favorite_articles_learn.png)
 
 **How it works**: Navigate to country pages, click the star icon to save articles, and manage your collection with the remove button.
 
@@ -219,8 +219,46 @@ View instant comparison table showing all 6 healthcare metrics across selected c
 Track your selected metric over time with historical data and projections through 2035, helping you understand healthcare system trajectories.
 
 
+## Policymaker Home Page
 
+Drive evidence-based healthcare policy decisions with comprehensive analytics and tracking tools.
 
+![Policymaker Home](policymaker_home_full.png)
+
+### Core Features
+- **Track Progress Over Time**: Monitor healthcare metrics evolution, analyze trends, and identify intervention areas
+- **Set & Monitor Targets**: Establish performance targets and track progress against benchmarks for strategic planning
+
+### Platform Stats
+195+ Countries Tracked | 6 Core Health Dimensions | 10+ Years of Data | 100+ Health Indicators
+
+### Policy Insights & Tips
+- Review trends over 5 years to identify patterns and assess policy impact on healthcare outcomes
+- Set targets using both regional averages and top-performing countries for achievable yet ambitious goals
+
+## Healthcare Trends Over Time
+
+Visualize historical data and future projections for key healthcare indicators to inform policy decisions.
+
+![Healthcare Trends](features_over_time_full.png)
+
+### Key Features
+- **Quick Start Guide**: 4-step process to analyze trends and projections
+- **Country & Year Selection**: Choose any country and set target year for projections (up to 2100)
+- **Indicator Analysis**: Track live births, general practitioners, or health expenditure trends
+- **Data Visualization**: Historical data with AI-powered predictions and downloadable datasets
+
+### Learn More
+![Learn Section](features_over_time_learn.png)
+
+**Available Indicators**: Live births per 1,000 population, general practitioners per 10,000 people, and total health expenditure per capita
+
+**Forecasting Technology**: Autoregressive models predict future values using historical patterns from WHO and GHSI data
+
+### View Analysis
+![Trends Graph](features_over_time_graph.png)
+
+Interactive chart displays historical trends (blue line) and predicted values (red dashed line) with key statistics including data points, historical/predicted counts, and calculation time. Download data as CSV for further analysis.
 
 
 
