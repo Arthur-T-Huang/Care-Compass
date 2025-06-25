@@ -55,18 +55,6 @@ The core entities of our application are the Users, along with UserRoles, and Co
 Along the side, you may see there are a few tables used for storing information regarding our ML models. So, for our regression model we store our hyperparameters per country and the training/testing datasets; and for the cosine similarity we store the weights of each health-related factor of the GHS Index.
 
 # Screenshots of Front-End
-Below are the country comparator components, including a table of the features and tracking the feature over time on a graph
-![image](country_comparator_table.png)
-![image](country_comparator_graph.png)
-
-Below are the images of our country profile page, including information about the country, as well as mock data powered articles  
-![image](profile_info.png)
-![image](profile_articles.png)
-
-Below are the screenshots of the features over time page, which display the graph based on the chosen button of the given features
-![image](feat_over_time_before.png)
-![image](feat_over_time_after.png)
-
 ## Home Page
 The Care Compass home page welcomes users with a clean, intuitive interface designed to guide different user types to their personalized healthcare insights.
 
@@ -74,20 +62,16 @@ The Care Compass home page welcomes users with a clean, intuitive interface desi
 
 ### Choose Your Role
 Three distinct pathways cater to different user needs:
-- **Resident**: Access personalized healthcare recommendations and country comparisons
-- **Student**: Explore healthcare data and trends for research and learning
-- **Policymaker**: Analyze healthcare systems and access policy insights
+- **Resident**: Access personalized healthcare recommendations and country profiles
+- **Student**: Explore country comparisons and country profiles
+- **Policymaker**: Analyze features over time and target certain healthcare scores
 
-### Why Choose Care Compass?
-- **Real Data**: Access authentic healthcare data from trusted global sources
-- **ML Insights**: Powered by advanced machine learning algorithms
-- **Global Coverage**: Compare healthcare systems across many different countries
-- **Personalized**: Get recommendations based on your top priorities
+A **Why Choose Care Compass?** section at the bottom
 
 The streamlined login process allows users to quickly select their role and access the tools most relevant to their needs, making complex healthcare data accessible to everyone.
 
-## Resident Home Page
-The personalized resident dashboard provides a centralized hub for all healthcare relocation tools and resources.
+## Relocating Resident Home Page
+The personalized Relocating resident dashboard provides a centralized hub for all healthcare relocation tools and resources.
 
 ![Resident Home](resident_home_full.png)
 
@@ -96,12 +80,8 @@ The personalized resident dashboard provides a centralized hub for all healthcar
 - **Explore Countries**: Discover detailed healthcare profiles and compare medical systems worldwide
 - **Saved Resources**: Access your collection of favorited healthcare articles and guides
 
-### Platform Stats
-195+ Countries | 1000+ Health Metrics | 24/7 Support | 98% User Satisfaction
+**Platform Stats** and **Quick Tips** section at the bottom 
 
-### Quick Tips
-- Start with Customize Your Move for personalized recommendations
-- Compare countries side-by-side to find your perfect healthcare destination
 
 ## Customize Your Move
 Our Customize Your Move tool helps you discover countries with healthcare systems that match your personal priorities through an intuitive 3-step process.
@@ -109,7 +89,7 @@ Our Customize Your Move tool helps you discover countries with healthcare system
 
 ### Learn More
 ![Learn Section](custom_move_learn.png)
-Understand the methodology behind the Global Health Security Index
+Understand each factor and the math behind the calculation
 
 ### How It Works
 ![Selection Interface](custom_move_selection.png)
@@ -143,7 +123,7 @@ Stay informed with curated articles specific to each country
 
 ### Learn More
 ![Learn Section](country_profile_learn.png)
-Understand the methodology behind the Global Health Security Index
+Understand the content of country profiles and the math behind the similar healthcare systems
 
 The page provides a complete healthcare profile with real-time articles and similarity comparisons, making it easy to understand any country's healthcare landscape at a glance.
 
@@ -161,7 +141,7 @@ Build a personalized library of healthcare insights from around the world.
 ### Learn More
 ![Learn Section](favorite_articles_learn.png)
 
-**How it works**: Navigate to country pages, click the star icon to save articles, and manage your collection with the remove button.
+**How it works**: Navigate to country profiles, click the star icon to save articles, and manage your collection with the remove button.
 
 **Why build a collection**: Track global healthcare trends, compare systems internationally, and quickly access relevant research for your work.
 
@@ -170,21 +150,16 @@ Start exploring country pages to curate your personalized healthcare knowledge b
 
 ## Student Home Page
 
-Your personalized dashboard for exploring global healthcare education opportunities and study destinations.
+Your personalized dashboard for researching and comparing global healthcare systems. 
 
 ![Student Home](student_home_full.png)
 
 ### Core Features
-- **Compare Countries**: Evaluate countries side-by-side for living conditions, education quality, and study opportunities
-- **Country Profiles**: Deep dive into healthcare systems, education requirements, and student life
-- **Saved Articles**: Access your personalized collection of study abroad guides and resources
+- **Compare Countries**: Evaluate countries side-by-side on several health metrics   
+- **Country Profiles**: Discover detailed healthcare profiles and compare medical systems worldwide   
+- **Saved Articles**: Access your collection of favorited healthcare articles and guides   
 
-### Platform Stats
-195+ Countries Analyzed | 1000+ Health Metrics | 6 Core Health Factors | 24/7 Resource Access
-
-### Student Success Tips
-- Compare 3-4 countries to understand healthcare education differences
-- Save articles about programs and requirements to build your personal resource library
+**Platform Stats** and **Student Success Tips** sections at the bottom
 
 ## Country Healthcare Comparator
 
@@ -229,14 +204,9 @@ Drive evidence-based healthcare policy decisions with comprehensive analytics an
 - **Track Progress Over Time**: Monitor healthcare metrics evolution, analyze trends, and identify intervention areas
 - **Set & Monitor Targets**: Establish performance targets and track progress against benchmarks for strategic planning
 
-### Platform Stats
-195+ Countries Tracked | 6 Core Health Dimensions | 10+ Years of Data | 100+ Health Indicators
+**Platform Stats** and **Policy Insights & Tips** sections at the bottom
 
-### Policy Insights & Tips
-- Review trends over 5 years to identify patterns and assess policy impact on healthcare outcomes
-- Set targets using both regional averages and top-performing countries for achievable yet ambitious goals
-
-## Healthcare Trends Over Time
+## Features Over Time
 
 Visualize historical data and future projections for key healthcare indicators to inform policy decisions.
 
@@ -246,14 +216,14 @@ Visualize historical data and future projections for key healthcare indicators t
 - **Quick Start Guide**: 4-step process to analyze trends and projections
 - **Country & Year Selection**: Choose any country and set target year for projections (up to 2100)
 - **Indicator Analysis**: Track live births, general practitioners, or health expenditure trends
-- **Data Visualization**: Historical data with AI-powered predictions and downloadable datasets
+- **Data Visualization**: Historical data with ML-powered predictions and downloadable datasets
 
 ### Learn More
 ![Learn Section](features_over_time_learn.png)
 
 **Available Indicators**: Live births per 1,000 population, general practitioners per 10,000 people, and total health expenditure per capita
 
-**Forecasting Technology**: Autoregressive models predict future values using historical patterns from WHO and GHSI data
+**Forecasting Technology**: Autoregressive models predict future values using historical patterns from WHO data
 
 ### View Analysis
 ![Trends Graph](features_over_time_graph.png)
@@ -269,7 +239,6 @@ Set ambitious healthcare goals and track when they'll be achieved based on curre
 ### Key Features
 - **Quick Start Guide**: 4-step process to analyze country data and set target values
 - **Current Status Review**: View 6 key healthcare metrics for your selected country
-- **Target Setting**: Adjust sliders to set ambitious yet achievable healthcare goals
 - **Projection Analysis**: Calculate when targets will be reached based on historical trends
 
 ### Learn More
@@ -284,8 +253,7 @@ Set ambitious healthcare goals and track when they'll be achieved based on curre
 
 **Step 1:** Select a country to analyze  
 **Step 2:** Review current healthcare status across 6 key metrics  
-**Step 3:** Set target values using interactive sliders  
-Click "Calculate Projections" to see when goals will be achieved
+**Step 3:** Set target values and click "Calculate Projections" to see when goals will be achieved
 
 ### View Results
 ![Results Summary](target_scores_chart.png)
@@ -301,13 +269,6 @@ Interactive graphs display trend projections with confidence scores, helping vis
 Learn about our mission to simplify global healthcare data through machine learning and analytics.
 
 ![About Page](about_full.png)
-
-### Overview
-- **Mission**: Help users compare global healthcare systems with data-driven insights
-- **Core Analysis**: Six healthcare factors including Prevention, Health System, and Risk Environment  
-- **Impact**: 195+ countries analyzed with 1000+ data points
-
-We convert complex healthcare data into actionable insights for individuals, students, and policymakers.
 
 
 ## Meet Our Team
